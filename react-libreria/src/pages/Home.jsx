@@ -1,3 +1,5 @@
+import MainMenu from "../components/MainMenu";
+
 export default function Home() {
     return (
         <>
@@ -5,16 +7,10 @@ export default function Home() {
                 <div className="logo">
                     LOGO
                 </div>
-                <nav>
-                    <a href="/">Home</a>
-                    <a href="/Books">Books</a>
-                    <a href="/Contacts">Contacts</a>
-                    <a href="/About">About</a>
-                </nav>
+                <MainMenu />
             </header>
             <main>
                 <h1>Home Page</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum laudantium doloremque aliquid similique commodi dolor veritatis animi! Nihil, mollitia.</p>
             </main>
 
             <footer>
