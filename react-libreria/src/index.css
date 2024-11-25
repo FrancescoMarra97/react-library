@@ -5,12 +5,14 @@
 }
 
 a {
-  color: #333;
+  color: white;
   padding: 1rem;
 }
 
 header {
   padding: 1rem;
+  background-color: black;
+  color: white;
 
   .logo {
     margin: 1rem;
@@ -19,6 +21,8 @@ header {
 
 main {
   padding: 1rem;
+
+
 }
 
 footer {

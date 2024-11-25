@@ -8,6 +8,7 @@ import About from './pages/about'
 import Contacts from './pages/contacts'
 import Books from './pages/books'
 import './App.css'
+import DefaultLayout from './pages/DefaultLayout'
 
 function App() {
 
@@ -16,10 +17,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Books' element={<Books />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/Contacts' element={<Contacts />} />
+          <Route element={<DefaultLayout />} >
+            <Route path='/' element={<Home />} />
+            <Route path='/Books' element={<Books />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/Contacts' element={<Contacts />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
